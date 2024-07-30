@@ -1,0 +1,18 @@
+<div class="terminal">
+  <p class="query d-inline-block me-3">> Enter a number</p>
+  <input [(ngModel)]="value" class="query text-center text-primary mb-4 mb-sm-0" id="number" type="number" placeholder="..." />
+  <p>> Choose one option to transform your input ...</p>
+  <button type="submit" (click)="switchLastDigits()" class="bg-transparent fw-bold p-3">Reverse last 2 digits</button>
+  <button type="submit" (click)="mirrorNumbers()" class="bg-transparent fw-bold p-3">Reverse all numbers</button>
+  <button type="submit" (click)="fibonacci()" class="bg-transparent fw-bold p-3">Display Fibonacci Sequence</button>
+  <button type="submit" (click)="pyramid()" class="bg-transparent fw-bold p-3">Pyramid pattern</button>
+  <button type="submit" (click)="pyramidReverse()" class="bg-transparent fw-bold p-3">Upside down pyramid pattern</button>
+  <button type="submit" (click)="column()" class="bg-transparent fw-bold p-3">Column shape</button>
+  <br />
+  <div id="transform-result" class="container-fluid mt-4 text-center">
+    <p><span id="parity">{{parity}}</span> RESULT</p>
+    <p id="transform-demo" class="text-primary">
+      <span [innerHTML]="result"></span>
+    </p>
+  </div>
+</div>

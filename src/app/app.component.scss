@@ -1,0 +1,31 @@
+#monitor {
+  border: 5px outset #97a0a0d8;
+  border-bottom: 0;
+  height: calc(100vh - 3rem);
+  #window {
+    border: 7px solid #3a3a3b;
+    box-shadow: inset 0 -0.5rem 5rem rgba(100, 97, 130, 0.2196078431), inset 0 0 1rem rgb(0 0 0 / 66%);
+  }
+  .cat {
+    width: 178px;
+  }
+  #cat-text {
+    background-color: #1b1d218a;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 75% 89%, 71% 100%, 58% 89%, 0 89%);
+  }
+}
+
+#monitor-stand {
+  border-bottom: 7px solid #444343;
+  clip-path: polygon(35% 0, 65% 0, 65% 100%, 35% 100%);
+  height: 2rem;
+}
+#monitor,
+#monitor-stand {
+  background-color: #24241feb;
+}
+.btn-close {
+  background: none;
+  height: initial;
+  width: initial;
+}

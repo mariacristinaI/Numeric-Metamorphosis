@@ -1,0 +1,22 @@
+<div class="terminal">
+  <p class="query d-inline-block me-3">> Display a list from 1 to</p>
+  <input
+    [(ngModel)]="value"
+    class="query text-center text-primary mb-4 mb-sm-0"
+    id="list-number"
+    title="only numbers!"
+    type="number"
+    placeholder="any number"
+  />
+  <p>> Now choose a display option for the list ...</p>
+  <button type="submit" (click)="FizzBuzz()" class="bg-transparent fw-bold p-3">FizzBuzz it</button>
+  <button type="submit" (click)="even()" class="bg-transparent fw-bold p-3">
+    All Even Numbers
+  </button>
+  <div class="list-result" class="container-fluid mt-4 text-center">
+    <p>RESULT</p>
+    <p id="list-demo" class="text-primary">
+      <span [innerHTML]="result"></span>
+    </p>
+  </div>
+</div>
