@@ -15,7 +15,7 @@ import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.componen
 })
 export class AppComponent {
   welcome() {
-    alert('Hello world! This is a terminal where you will encounter a collection of basic algorithms solved by me, using JavaScript & Typescript. Feel free to use the results. All the best, Maria! ~ 🐈‍⬛🎧✮');
+    alert("Hey there! 👋 This terminal is your playground for exploring basic algorithms. I've solved them using JavaScript and TypeScript, ready for you to use. Enjoy the code, and best of luck with your projects! From, Maria ✮");
   };
   
   displayScrollTop = false;
