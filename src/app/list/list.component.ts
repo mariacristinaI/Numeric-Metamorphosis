@@ -61,4 +61,20 @@ export class ListComponent {
     (document.getElementById('cat-text') as HTMLElement).innerHTML =
       '<p>Displayed only the even numbers from the list.</p>';
   }
+
+  odd() {
+    let inputNumber: number = +this.value;
+    if (!inputNumber) {
+      return;
+    }
+    let result = [];
+    for (let i = 1; i <= inputNumber; i++) {
+      if (i % 2 !== 0) {
+        result.push(i);
+      }
+      this.result = result;
+    }
+    (document.getElementById('cat-text') as HTMLElement).innerHTML =
+      '<p>Displayed only the odd numbers from the list.</p>';
+  }
 }

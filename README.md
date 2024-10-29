@@ -11,5 +11,6 @@ Available commands that allow you to transform numbers or lists:
 - Make a column shape using the entered numbers
 - Transform a list using the FizzBuzz algorithm
 - Show only the even numbers from a list
+- Show only the odd numbers from a list
 
 All the solutions can be found within the specially designed terminal that includes an in-house cat explaining the purpose of each command.
