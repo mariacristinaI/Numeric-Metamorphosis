@@ -1,0 +1,31 @@
+<div class="terminal">
+  <p class="query d-inline-block me-3">> Select an album.</p>
+  <p class="query me-3">> [ Playlist ]</p>
+  <div>
+    <ol class="border-start ms-3 ps-5">
+      <li>
+        <a class="fw-bold m-auto text-center text-decoration-none"
+           (click)="changeBackground(bgDiv)" 
+           href="https://musicforprogramming.net/one" 
+           target="_blank">
+          Datassette [1254 tracks]
+        </a>
+      </li>
+      <li>
+        <a class="fw-bold m-auto text-center text-decoration-none"
+           (click)="changeBackground(bgDiv)" 
+           href="https://www.youtube.com/watch?v=Z6ih1aKeETk" 
+           target="_blank">
+           Tycho - Dive (Full Album)
+        </a>
+      </li>
+    </ol>
+  </div>
+  <p class="query me-3">> Spin the vinyl disc.</p>
+  <p class="text-center">PRESS A TUNE TO PLAY</p>
+  <div id="vinyl" class="p-5 m-auto">
+    <div #bgDiv class="disk bg-image d-flex" [class.rotate]="isAnimating">
+      <p class="fw-bold p-3 m-auto text-center text-decoration-none"> </p>
+    </div>
+  </div>
+  
