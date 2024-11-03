@@ -5,7 +5,7 @@
   </div>
   <div>
     <p>
-      C:\Users\Maria-Cristina Iosub\Documents\Numeric-metamorphosis\src\main-server.mjs
+      C:\Users\<a class="text-decoration-none" href="https://maria-cristinaiosub.vercel.app/home" target="_blank">Maria-Cristina Iosub</a>\Documents\Numeric-metamorphosis\src\main-server.mjs
       <br />
       Connected! Access granted. Session initiated. Terminal opened.
     </p>
@@ -21,17 +21,22 @@
       </button>
       <ul class="dropdown-menu">
         <li>
-          <a class="dropdown-item fw-bold text-decoration-none" routerLink="/transform-numbers" routerLinkActive="active">
+          <a class="dropdown-item fw-bold text-decoration-none" routerLink="/transform-numbers" routerLinkActive="active" (click)="lunaTransforms()">
             / transform numbers
           </a>
         </li>
         <li>
-          <a class="dropdown-item fw-bold text-decoration-none" routerLink="/create-a-list" routerLinkActive="active">
+          <a class="dropdown-item fw-bold text-decoration-none" routerLink="/create-a-list" routerLinkActive="active" (click)="lunaLists()">
             / create a list
           </a>
         </li>
+        <li>
+          <button class="dropdown-item fw-bold text-decoration-none" routerLink="/play-music" routerLinkActive="active" (click)="lunaMusic()">
+            / listen to music
+          </button>
+        </li>
       </ul>
     </nav>
-    <p>--------------------</p>
+    <p>- - - - - - - - -</p>
   </div>
 </header>

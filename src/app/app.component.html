@@ -1,18 +1,31 @@
 <div id="monitor" class="m-3 mb-0 p-4 rounded-5">
   <div id="window" class="bg-dark rounded-5 p-4 w-100 h-100">
     <div class="d-flex flex-column overflow-auto h-100">
-      <app-header></app-header>
+      <app-header />
       <main>
         <router-outlet></router-outlet>
       </main>
       <div class="d-flex flex-column flex-fill align-items-end justify-content-end">
         <div id="cat-text" class="px-3 py-2 text-center">
           <p class="m-0">
-            <a class="link-primary text-decoration-none" href="https://applemoyse.dev/luna" target="_blank">LUNA</a>
-            says hello.
+            @if (catText$|async;as text) {
+            {{ text }}
+            }@else {
+            <a
+              class="link-primary text-decoration-none"
+              href="https://applemoyse.dev/luna"
+              target="_blank"
+              >LUNA</a
+            >
+            says hello. }
           </p>
         </div>
-        <img class="cat" src="/assets/images/cat.png" alt="A sketch of a cat saying meow" />
+        <button id="cat-button" routerLink="/welcome-screen" (click)="homeText()"
+          ><img
+            class="cat"
+            src="/assets/images/cat.png"
+            alt="A simple line drawing of a cat saying meow. Clicking it will take you to the homepage."
+        /></button>
       </div>
       <footer class="p-2 text-center">
         <button
