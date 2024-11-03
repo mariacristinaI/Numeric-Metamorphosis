@@ -55,12 +55,12 @@
 @import "bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
-@font-face {
-  font-family: 'Share Tech Mono';
-  src: url('/src/assets/theme/ShareTechMono-Regular.ttf');
-  font-style: normal;
-  font-display: swap;
-}
+  // @font-face {
+  //   font-family: 'Share Tech Mono';
+  //   src: url('/src/assets/theme/ShareTechMono-Regular.ttf');
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
 
 body {
   background-image: url("/assets/images/isometric_background.png");
