@@ -54,13 +54,13 @@
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
 
-// 8. Add additional custom code here
-  // @font-face {
-  //   font-family: 'Share Tech Mono';
-  //   src: url('/src/assets/theme/ShareTechMono-Regular.ttf');
-  //   font-style: normal;
-  //   font-display: swap;
-  // }
+/* 8. Add additional custom code here
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url('/src/assets/theme/ShareTechMono-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+}*/
 
 body {
   background-image: url("/assets/images/isometric_background.png");
